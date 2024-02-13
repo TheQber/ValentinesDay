@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+        <title>Valentine's Day</title>
+    </head>
+    <body>
+        <div id="classs">   
+            <div id="textbox" style="font-size:150px;">You are my &nbsp</div>
+            <div id="random_quote" style="font-size: 150px; background-color:red; border-radius: 20px;">(click me!)</div>
+        </div>
+    </body>
+    <script>
+        
+        var praise = [" chellakutty", " lakshukutty", " jellybean", " sugar donut", " cupcake ", " baby girl", " kanmani", " chocochip cookie" , " pookie bear" , " sweetheart" , " chellamm" , " beautiful wife" , "best friend forever" , "life  partner" , "cutie pie", " bommukutty" , "teddy bear" , ];
+        function getRandomPraise() {
+            var randomIndex = Math.floor(Math.random() * praise.length);
+            return praise[randomIndex];
+        }
+        document.getElementById("random_quote").addEventListener("click", function() {
+            var randomPraise = getRandomPraise();
+            this.textContent = randomPraise;
+        });
+    </script>
+    
+</html>

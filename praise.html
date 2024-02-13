@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+        <title>Valentine's Day</title>
+    </head>
+    <body>
+        <div id="classs">   
+            <div id="textbox" style="font-size:150px;">I love &nbsp</div>
+            <div id="random_quote" style="font-size: 150px; background-color:red; border-radius: 20px;">(click me!)</div>
+        </div>
+    </body>
+    <script>
+        
+        var praise = [" your cheeks!", " the way you baby me!", " your beautiful thoughts!", " your hips!", " your smile ", " the way you giggle", " your hair!", " the way you talk" , " your mind!" , " how beautiful you are" , " your innocence" , " how you're my bff!" , "your personality!" , "how determined you are" , "how you calm me down", " how you understand me" , "how you wait for me" , "how you support me" , "how you dance!" , "how you make me smile!","how you make sure I'm okk" , "how you hug me" , "how your hair smells" , "how you never type 't'" , "how you say, 'aprom?" , "how safe you feel with me!", "how you never judge me","how ambitious you are"];
+        function getRandomPraise() {
+            var randomIndex = Math.floor(Math.random() * praise.length);
+            return praise[randomIndex];
+        }
+        document.getElementById("random_quote").addEventListener("click", function() {
+            var randomPraise = getRandomPraise();
+            this.textContent = randomPraise;
+        });
+    </script>
+    
+</html>

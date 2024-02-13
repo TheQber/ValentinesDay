@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+        <title></title>
+    </head>
+    <body>
+        <div class="box">
+        <center>
+            <img id="object1" src="./flowers2.png"><br>
+            <h1 id="main">Hiii chellakutty! Would you like to be my valentine?</h1>
+        </center>
+        
+        <div class="container">
+            <img id="Yes" src="./yesheart.png" height="150vh">
+            <img id="No" src="./noheart.png" height="150vh">
+        </div></div>      
+    </body>
+    <script>
+        document.getElementById("Yes").addEventListener("click", redirectFunction);
+        
+        function redirectFunction(){
+            window.open("./page2.html", '_blank');
+        }
+        document.getElementById("No").addEventListener("click", showAlert);
+        
+        function showAlert() {
+            var myText = "This button doesn't work :)";
+            alert (myText);
+        }
+    </script>
+    
+</html>

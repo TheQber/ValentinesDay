@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+        <title>Valentine's Day</title>
+    </head>
+    <body>
+        <div>
+        <center><div id="yay1">Yayyyyy!</div><br>
+        <div id="yay3">My baby is my Valentine!</div><br>
+        <div id="yay2">Appo aarambikalaama madam?<br>Click one of the below options to continue!</div></center></div><br>
+        <div class="mainbox">
+        
+            <img id="praise"src="./Picture1-removebg-preview.png">
+            <img id="ily" src="./Picture10-removebg-preview.png" onclick="play()"><audio id="audio" src="./ily.mp3" ></audio>
+            <img id="wedding"src="./Picture5-removebg-preview.png">
+            <img id="poem"src="./Picture8-removebg-preview.png">
+            <img id="nicks"src="./Picture14-removebg-preview.png">
+        
+        </div>
+        <br><br>
+        <center><a href="./index.html"><button type="button" value="return" id="return" >return to previous page</button></a></center>
+
+    </body>
+    <script>
+        document.getElementById("praise").addEventListener("click", redirectFunction);
+        
+        function redirectFunction(){
+            window.open("./praise.html", '_blank');
+        }
+        function play(){
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+        document.getElementById("wedding").addEventListener("click", redirectFunction2);
+        
+        function redirectFunction2(){
+            window.open("./755.png", '_blank');
+        }
+        document.getElementById("poem").addEventListener("click", redirectFunction3);
+        
+        function redirectFunction3(){
+            window.open("./MyPoem.jpg", '_blank');
+        }
+        document.getElementById("nicks").addEventListener("click", redirectFunction4);
+        
+        function redirectFunction4(){
+            window.open("./nicks.html", '_blank');
+        }
+    </script>
+</html>
